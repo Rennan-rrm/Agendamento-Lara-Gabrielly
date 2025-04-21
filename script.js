@@ -16,7 +16,7 @@ document.querySelector(".btn-agenda").addEventListener("click", function (e) {
     }
   
     const mensagemWhatszap =`Olá, meu nome é ${nome} quero agendar para o dia ${dataFormatadaBR} e horario: ${horario} para fazer ${servico}.`;
-    const numero = "556199468754";
+    const numero = "55619468754";
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagemWhatszap)}`;
   
     window.open(link, "_blank");
