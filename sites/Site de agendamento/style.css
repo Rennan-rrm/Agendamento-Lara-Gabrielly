@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    align-items: center;
+    background-color: black;
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Adicionado para adaptar o fundo */
+    min-height: 100vh; /* Para ocupar a tela toda */
+    overflow: hidden;
+}
+
+#conteiner-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#perfil{
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 150px; /* Reduzido para se ajustar melhor em telas menores */
+    max-width: 80%;
+}
+
+.nome-perfil{
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.nome-perfil2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#conteiner-agendamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white ;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+#titulo-agendamento{
+    text-align: center;
+    margin-top: 0;
+}
+
+.formulario label {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+.formulario input{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-agenda{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px 0;
+    font-size: 12px;
+}
