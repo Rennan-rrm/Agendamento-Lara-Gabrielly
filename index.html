@@ -26,13 +26,17 @@
         <div class="agendamento">
             <h1 id="titulo-agendamento">Agendamento</h1>
             <div class="formulario">
-                <label for="nome-cliente">Nome: </label>
+                <label for="nome">Nome: </label>
                 <input type="text" name="nome" id="nome"><br>
-                <label for="tipo-serviço">Tipo de serviço:</label>
-                <input type="text" name="serviço" id="serviço" >
-                <label for="">Data: </label>
+                <label for="serviço">Tipo de serviço:</label>
+                <select name="serviços" id="serviço">
+                    <option value="Cílios">Cílios</option>
+                    <option value="Sobrancelha">Sobrancelha</option>
+                    <option value="Sobrancelha/Cílios">Cílios/Sobrancelha</option>
+                </select>
+                <label for="data-agendamento">Data: </label>
                 <input type="date" name="data-agendamento" id="data-agendamento">
-                <label for="horario">Horario:</label>
+                <label for="hora-agendamento">Horario:</label>
                 <input type="time" name="hora-agendamento" id="hora-agendamento">
             </div>
             
