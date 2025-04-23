@@ -26,22 +26,24 @@
         <div class="agendamento">
             <h1 id="titulo-agendamento">Agendamento</h1>
             <div class="formulario">
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome"><br>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                 <label for="serviço">Tipo de serviço:</label>
-                <select name="serviços" id="serviço">
+                <select name="serviços" id="serviço" required>
+                    
+                    <option >--Selecione--</option>
                     <option value="Cílios">Cílios</option>
                     <option value="Sobrancelha">Sobrancelha</option>
                     <option value="Sobrancelha/Cílios">Cílios/Sobrancelha</option>
                 </select>
                 <label for="data-agendamento">Data: </label>
-                <input type="date" name="data-agendamento" id="data-agendamento">
+                <input type="date" name="data-agendamento" id="data-agendamento" required>
                 <label for="hora-agendamento">Horario:</label>
-                <input type="time" name="hora-agendamento" id="hora-agendamento">
+                <input type="time" name="hora-agendamento" id="hora-agendamento"required>
             </div>
             
             <div id="btn">
-                <a class="btn-agenda" href="http://wa.me/" target="_blank">Agenda</a>
+                <input  class="btn-agenda" type="submit" value="Agenda"  target="_blank">
             </div>
         </div>
     </div>
