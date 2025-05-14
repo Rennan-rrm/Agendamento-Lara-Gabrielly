@@ -2,7 +2,7 @@ document.querySelector(".btn-agenda").addEventListener("click", function (e) {
     e.preventDefault(); // Impede a navegação padrão do link
   
     const nome = document.getElementById("nome").value;
-    const servico = document.getElementById("serviço").value;
+    const servico = document.getElementById("servico").value;
     const dataISO = document.getElementById("data-agendamento").value;
     const horario = document.getElementById("hora-agendamento").value;
   
