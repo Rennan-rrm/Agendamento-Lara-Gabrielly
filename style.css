@@ -1,15 +1,13 @@
 body{
     margin: 0;
     align-items: center;
-    background-color: black;
-    background-image: url(img/fundo.jpg);
+    background-image: url(img/O928W10.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; /* Adicionado para adaptar o fundo */
     min-height: 100vh; /* Para ocupar a tela toda */
     overflow: hidden;
 }
-
 #conteiner-perfil{
     display: flex;
     justify-content: center;
@@ -42,67 +40,63 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-
-#conteiner-agendamento{
+#conteiner-perfil{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: white ;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 15px;
-    box-sizing: border-box;
-    flex-direction: column;
-}
-
-#titulo-agendamento{
     text-align: center;
-    margin-top: 0;
+    margin-top: 50px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#foto-perfil{
+   border: 1px solid black;
+    border-radius: 100px;
+    width: 150px; /* Reduzido para se ajustar melhor em telas menores */
+    max-width: 80%; 
+}
+#perfil{
+    text-align: center;
 }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza tudo horizontalmente */
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 10px; /* Espaçamento lateral */
-}
-.formulario label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  text-align: center;
-}
-input, select {
-  width: 80%;
-  max-width: 220px;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-#btn{
+#conteinerForm {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    text-align: center;
+    border: 1px solid black;
+    height: 350px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: white;
 }
 
-.btn-agenda{
-    display: inline-block;
-    width: 100px;
-    height: 35px;
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+} option{
+    font-weight: bold;
+}
+input, select {
+    width: 150px;
     text-align: center;
-    line-height: 35px;
-    border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 5px;
+}
+#btn button{
+    margin: 30px 0;
     background-color: #25D366;
     color: white;
-    text-decoration: none;
-    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
+#btn button:hover{
+    background-color: #075E54;
+    padding: 7px;
+} 
 footer{
     display: flex;
     justify-content: center;

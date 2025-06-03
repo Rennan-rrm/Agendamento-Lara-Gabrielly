@@ -1,23 +1,20 @@
-document.querySelector(".btn-agenda").addEventListener("click", function (e) {
-    e.preventDefault(); // Impede a navegação padrão do link
-  
-    const nome = document.getElementById("nome").value;
-    const servico = document.getElementById("servico").value;
-    const dataISO = document.getElementById("data-agendamento").value;
-    const horario = document.getElementById("hora-agendamento").value;
-  
-    let dataFormatadaBR = "";
-    if (dataISO) {
-      const data = new Date(dataISO);
-      const dia = data.getDate().toString().padStart(2, '0');
-      const mes = (data.getMonth() + 1).toString().padStart(2, '0');
-      const ano = data.getFullYear();
-      dataFormatadaBR = `${dia}/${mes}/${ano}`;
-    }
-  
-    const mensagemWhatszap =`Olá, meu nome é ${nome} quero agendar para o dia ${dataFormatadaBR} e horario: ${horario} para fazer ${servico}.`;
-    const numero = "5561994648754";
-    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagemWhatszap)}`;
-  
-    window.open(link, "_blank");
+const nome =document.getElementById('nome'); 
+const servico =document.getElementById('servico'); 
+const dataAgendamento =document.getElementById('dataAgendamento'); 
+const horaAgendamento =document.getElementById('horaAgendamento'); 
+const form =document.getElementById('formAgendamento'); 
+       
+form.addEventListener('submit', function(event){
+event.preventDefault();
+  const numero =5561994648754;
+
+  const partes = dataAgendamento.value.split('-');
+  const dataFormatada = `${partes[2]}/${partes[1]}/${partes[0]}`;
+
+  const mensagemWhatsZap= encodeURIComponent(
+    `Olá, meu nome é  ${nome.value} quero agendar para o dia ${dataFormatada} e horario:${horaAgendamento.value} para fazer ${servico.value}.`
+  );
+        
+  const link= `https://wa.me/${numero}?text=${mensagemWhatsZap}`;
+  window.open(link,'_blank');
   });
