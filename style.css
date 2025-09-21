@@ -1,7 +1,7 @@
 body{
     margin: 0;
     align-items: center;
-    background-image: url(img/fundo.jpg);
+    background-image: url(https://www.freepik.es/foto-gratis/arreglo-flores-fondo-blanco_5943449.htm#fromView=keyword&page=1&position=1&uuid=8ae92897-a29e-42c2-80c1-215f06a195cf&query=Estetica+gris+blanca);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; /* Adicionado para adaptar o fundo */
@@ -104,3 +104,4 @@ footer{
     margin-top: 10px 0;
     font-size: 12px;
 }
+
